@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="card-front">
+                <img id="card-logo" src="./images/card-logo.svg" alt="">
+                <div id="zeros">
+                    <p>0000</p>
+                    <p>0000</p>
+                    <p>0000</p>
+                    <p>0000</p>
+                </div>
+                <div id="name">
+                    <p>Saifullah Khan</p>
+                    <p>00/00</p>
+                </div>
+                <img src="./images/bg-card-front.png" alt="error" id="card-front">
+
+            </div>
+            <div class="card-back">
+                <p class="backzeros">000</p>
+                <img src="./images/bg-card-back.png" alt="error" id="card-back">
+        
+            </div>
+           </div>
+        <div class="right">
+        <form >
+            <div class="dflex">
+                <label for="CardholderName">Cardholder name</label>
+           <input type="text" name="" id="CardholderName" placeholder="e.g. Jane Appleseed">
+           <span class="errorText" id="nameError"></span>
+
+            </div>
+
+            <div class="dflex">
+                <label for="number">Card Number</label>
+                <input type="text" name="" id="number" placeholder="e.g. 1234 5678 9123 000">
+                <span class="errorText" id="numberError"></span>
+
+            </div>
+
+
+            
+      <div class="mainDFlex">
+        <div class="dflex">
+            <label for="date">Exp. date (MM/YY)</label>
+           <div class="monthyear">
+            <input type="number" name="date" class="myNumber" id="month" placeholder="MM">
+           <input type="number" name="date" class="myNumber" id="year"  placeholder="YY">
+           
+           </div>
+           <span class="errorText" id="dateError"></span>
+
+        </div>
+
+           <div class="dflex">
+            <label for="cvc">CVC</label>
+            <input  type="number" id="cvc" placeholder="e.g. 123">
+            <span class="errorText" id="cvcError"></span>
+
+        </div>
+      </div>
+
+
+           <button id="confirm">Confirm</button>
+        
+        </form>   
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
